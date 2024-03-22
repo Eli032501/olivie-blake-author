@@ -3,3 +3,8 @@ h1 {
   font-size: 128px;
   font-weight: 800;
 }
+h2 {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+}
