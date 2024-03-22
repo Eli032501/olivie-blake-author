@@ -54,4 +54,5 @@ header {
   background-color: var(--second-color);
   border-radius: 5px;
   box-shadow: -4px 4px 12px rgba(139, 139, 139, 0.2);
+  text-transform: uppercase;
 }
