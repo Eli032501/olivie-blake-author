@@ -183,7 +183,7 @@ footer div p {
   }
   .text-heading h2 {
     font-size: 22px;
-    margin-bottom: 180px;
+    margin-bottom: 140px;
   }
   .text-heading h3 {
     margin-bottom: 140px;
@@ -197,7 +197,7 @@ footer div p {
   .frist-section {
     max-width: 580px;
     grid-template-columns: 1fr;
-    grid-gap: 36px;
+    grid-gap: 32px;
     padding: 80px 40px;
   }
   .frist-section figure {
