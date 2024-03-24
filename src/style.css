@@ -81,7 +81,7 @@ header {
   background-color: var(--second-color);
   border-radius: 5px;
   text-transform: uppercase;
-  transition: all 100ms ease-in-out;
+  transition: all 150ms ease-in-out;
   border: var(--second-color) 2px solid;
   box-shadow: -2px 2px 10px rgba(139, 139, 139, 0.2);
 }
@@ -145,6 +145,10 @@ footer li {
 }
 footer a {
   color: var(--second-color);
+  transition: all 150ms ease-in-out;
+}
+footer a:hover {
+  text-decoration: underline;
 }
 footer div p {
   color: var(--primary-color);
