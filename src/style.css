@@ -1,7 +1,7 @@
 :root {
-  --heading-color: rgb(255, 255, 255);
+  --primary-color: #f5f5f5;
   --second-color: #fcca36;
-  --third-color: #1d2d46;
+  --third-color: #272044;
 }
 * {
   margin: 0;
@@ -9,32 +9,45 @@
 }
 a {
   text-decoration: none;
-  color: white;
+  color: var(--primary-color);
 }
 ul {
   list-style: none;
 }
 p {
+  color: #272044;
+  opacity: 70%;
+  line-height: 26px;
   font-size: 16px;
+}
+img {
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
 }
 body {
   font-family: "Plus Jakarta Sans", sans-serif;
-  max-width: 1100px;
   margin: 0 auto;
-  background: var(--second-color);
-  box-shadow: 0px 10px 22px rgba(0, 0, 0, 0.6);
+  background: var(--primary-color);
 }
+/* ----------- HEADER ----------- */
 h1 {
   font-size: 128px;
   font-weight: 800;
   margin-bottom: 20px;
   line-height: 1.2em;
 }
+h2 {
+  font-size: 45px;
+  font-weight: 800;
+  color: var(--third-color);
+}
 h3 {
   font-size: 24px;
   font-weight: 800;
 }
 .text-heading h2 {
+  color: var(--primary-color);
   font-size: 40px;
   font-weight: 700;
   margin-bottom: 50px;
@@ -57,7 +70,7 @@ header {
 }
 .text-heading {
   text-align: center;
-  color: var(--heading-color);
+  color: var(--primary-color);
 }
 .button {
   display: inline-block;
@@ -70,10 +83,42 @@ header {
   box-shadow: -4px 4px 12px rgba(139, 139, 139, 0.2);
   text-transform: uppercase;
 }
+/* -----------MAIN ----------- */
 
-/* FOOTER */
+.frist-section {
+  max-width: 1170px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 64px;
+  align-items: center;
+  padding: 100px 170px;
+}
+.frist-section figure {
+  height: 600px;
+  border-radius: 20px;
+  box-shadow: -3px 3px 12px rgba(0, 0, 0, 0.3);
+}
+.frist-section img {
+  border-radius: 20px;
+}
+
+.small-heading {
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 13px;
+  margin-bottom: 7px;
+  color: var(--second-color);
+  padding: 2px 10px;
+  border-left: solid 5px var(--second-color);
+}
+
+.text-container {
+  margin: 32px 0;
+}
+/* ----------- FOOTER ----------- */
 footer {
-  color: var(--heading-color);
+  color: var(--primary-color);
   background: linear-gradient(rgba(29, 45, 70, 0.92), rgba(29, 45, 70, 0.92)),
     url("../images/olivie-bg.png");
   background-size: cover;
@@ -82,7 +127,7 @@ footer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 64px;
-  padding: 100px 70px 60px;
+  padding: 100px 100px 50px;
 }
 footer h3 {
   margin-bottom: 16px;
@@ -92,6 +137,9 @@ footer li {
 }
 footer a {
   color: var(--second-color);
+}
+footer div p {
+  color: var(--primary-color);
 }
 @media (max-width: 960px) {
   h1 {
