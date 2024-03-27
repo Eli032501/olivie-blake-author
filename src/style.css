@@ -2,7 +2,7 @@
   --primary-color: #fbfafb;
   --second-color: #fcca36;
   --third-color: #272044;
-  --fourth-color: #ebeaea;
+  --fourth-color: rgb(237, 237, 237);
 }
 * {
   margin: 0;
@@ -154,6 +154,9 @@ header {
 .second-section article {
   border-radius: 20px;
   max-width: 370px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   background-color: var(--primary-color);
 }
 .second-section figure {
@@ -166,12 +169,14 @@ header {
 }
 
 .body-article {
-  padding: 24px 32px;
+  padding: 24px 32px 0px;
 }
 .body-article p {
   padding: 8px 0px 24px;
 }
-.body-article .button {
+
+article .button {
+  margin: 0px 32px 24px;
   display: block;
   text-align: center;
 }
