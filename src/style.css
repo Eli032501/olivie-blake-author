@@ -157,10 +157,10 @@ header {
   background-color: var(--primary-color);
 }
 .second-section figure {
-  height: 380px;
+  height: 420px;
 }
 .second-section img {
-  object-position: 0px -70px;
+  object-position: center;
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
 }
@@ -194,6 +194,7 @@ footer {
   padding: 100px 100px 50px;
 }
 footer h3 {
+  color: var(--primary-color);
   margin-bottom: 16px;
 }
 footer li {
