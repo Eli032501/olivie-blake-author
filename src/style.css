@@ -2,7 +2,7 @@
   --primary-color: #fbfafb;
   --second-color: #fcca36;
   --third-color: #272044;
-  --fourth-color: rgb(237, 237, 237);
+  --fourth-color: rgb(242, 242, 242);
 }
 * {
   margin: 0;
@@ -140,10 +140,10 @@ header {
 .second-section h2 {
   text-align: center;
   margin: auto;
-  width: 500px;
+  max-width: 500px;
 }
 .second-section .small-heading {
-  margin: 0 auto 7px;
+  margin-inline: auto;
 }
 .group-article {
   margin-top: 70px;
@@ -153,7 +153,7 @@ header {
 }
 .second-section article {
   border-radius: 20px;
-  max-width: 370px;
+
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -180,7 +180,7 @@ article .button {
   display: block;
   text-align: center;
 }
-.body-article .button:hover {
+article .button:hover {
   background-color: var(--third-color);
   color: var(--primary-color);
   border: var(--third-color) 2px solid;
@@ -238,7 +238,7 @@ footer div p {
     font-size: 70px;
   }
   h2 {
-    font-size: 24px;
+    font-size: 30px;
   }
   h3 {
     font-size: 16px;
@@ -279,7 +279,35 @@ footer div p {
     margin: auto;
     margin-bottom: 12px;
   }
-
+  .second-section {
+    padding: 70px 30px;
+  }
+  .group-article {
+    grid-template-columns: 1fr;
+    margin-top: 50px;
+  }
+  .second-section article {
+    margin: 0px auto;
+    max-width: 650px;
+    border-radius: 14px;
+  }
+  .article-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .second-section figure {
+    height: 100%;
+  }
+  .second-section img {
+    object-position: center;
+    border-top-right-radius: 0px;
+    border-top-left-radius: 14px;
+  }
+  article .button {
+    box-shadow: none;
+    margin: 0px;
+    border-radius: 0px 0px 14px 14px;
+  }
   footer {
     text-align: center;
     grid-template-columns: 1fr;
@@ -295,5 +323,27 @@ footer div p {
   footer div p {
     margin: 0 auto;
     max-width: 400px;
+  }
+}
+@media (max-width: 760px) {
+  h2 {
+    font-size: 26px;
+  }
+
+  .second-section article {
+    max-width: 400px;
+    border-radius: 14px;
+  }
+  .article-card {
+    grid-template-columns: none;
+  }
+  .body-article {
+    padding: 24px;
+  }
+  .second-section figure {
+    max-height: 450px;
+  }
+  .second-section img {
+    border-top-right-radius: 14px;
   }
 }
