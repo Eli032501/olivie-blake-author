@@ -142,12 +142,12 @@ header {
 .other-section h2 {
   text-align: center;
   margin: auto;
+  margin-bottom: 60px;
 }
 .other-section .small-heading {
   margin-inline: auto;
 }
 .grid-container {
-  margin-top: 60px;
   display: grid;
   grid-gap: 30px;
 }
@@ -190,19 +190,27 @@ article .button:hover {
 }
 /* ---3rd section --- */
 .grid-2col {
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+}
+.grid-2col-dif-size {
+  margin-top: 30px;
+  grid-template-columns: 2fr 1fr;
+  height: 590px;
 }
 .video {
   display: block;
   width: 100%;
   aspect-ratio: 16 / 9;
-  border-radius: 14px;
+  border-radius: 4px;
 }
 .embeds {
+  display: block;
+
   height: 100%;
   width: 100%;
-  border-radius: 14px;
+  border-radius: 10px;
 }
+
 /* ----------- FOOTER ----------- */
 footer {
   color: var(--primary-color);
