@@ -189,25 +189,45 @@ article .button:hover {
   border: var(--third-color) 2px solid;
 }
 /* ---3rd section --- */
-.grid-2col {
-  grid-template-columns: 1fr 1fr;
+
+.grid-embeds {
+  grid-template-columns: repeat(6, 1fr);
 }
-.grid-2col-dif-size {
-  margin-top: 30px;
-  grid-template-columns: 2fr 1fr;
-  height: 590px;
+.video1 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
 }
-.video {
+.video2 {
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+.embed1 {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 2;
+  grid-row-end: 4;
+  height: 352px;
+  width: 100%;
+  border-radius: 10px;
+}
+.embed2 {
+  grid-column-start: 5;
+  grid-column-end: 7;
+  grid-row-start: 1;
+  grid-row-end: 4;
+  object-fit: cover;
+}
+.embed-insta {
+  height: 100%;
+}
+.videos {
   display: block;
   width: 100%;
   aspect-ratio: 16 / 9;
-  border-radius: 4px;
-}
-.embeds {
-  display: block;
-
-  height: 100%;
-  width: 100%;
   border-radius: 10px;
 }
 
@@ -254,6 +274,24 @@ footer div p {
   h3 {
     font-size: 20px;
   }
+  .embed2 {
+    display: none;
+  }
+
+  .video1 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+  .video2 {
+    grid-column-start: 4;
+    grid-column-end: 7;
+  }
+  .embed1 {
+    grid-column-start: 1;
+    grid-column-end: 7;
+    grid-row-end: 2;
+  }
+
   footer {
     grid-template-columns: 1fr 1.2fr 1.2fr;
     padding: 100px 70px 50px;
@@ -308,8 +346,8 @@ footer div p {
   .other-section {
     padding: 70px 30px;
   }
-  .grid-container {
-    margin-top: 50px;
+  .other-section h2 {
+    margin-bottom: 40px;
   }
   .grid-3col {
     grid-template-columns: 1fr;
@@ -336,6 +374,21 @@ footer div p {
     margin: 0px;
     border-radius: 0px 0px 14px 14px;
   }
+  .grid-embeds {
+    grid-template-columns: 1fr;
+    margin: 0px auto;
+    max-width: 650px;
+  }
+
+  .video1,
+  .video2,
+  .embed1 {
+    grid-column-start: unset;
+    grid-column-end: unset;
+    grid-row-start: unset;
+    grid-row-end: unset;
+  }
+
   footer {
     text-align: center;
     grid-template-columns: 1fr;
@@ -373,5 +426,12 @@ footer div p {
   }
   .other-section img {
     border-top-right-radius: 14px;
+  }
+  .grid-embeds {
+    max-width: 400px;
+  }
+  .embed1 {
+    height: unset;
+    min-height: 152px;
   }
 }
