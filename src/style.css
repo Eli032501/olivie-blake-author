@@ -119,7 +119,7 @@ header {
 }
 
 .small-heading {
-  width: 72px;
+  width: 70px;
   text-transform: uppercase;
   letter-spacing: 5px;
   font-size: 13px;
@@ -133,16 +133,18 @@ header {
   margin: 32px 0;
 }
 /* ---2nd section --- */
-.second-section {
-  padding: 100px 70px;
+.bg-color4 {
   background-color: var(--fourth-color);
 }
-.second-section h2 {
+.other-section {
+  padding: 100px 70px;
+}
+.other-section h2 {
   text-align: center;
   margin: auto;
-  max-width: 500px;
+  max-width: 580px;
 }
-.second-section .small-heading {
+.other-section .small-heading {
   margin-inline: auto;
 }
 .group-article {
@@ -151,7 +153,7 @@ header {
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 30px;
 }
-.second-section article {
+.other-section article {
   border-radius: 20px;
 
   display: flex;
@@ -159,10 +161,10 @@ header {
   justify-content: space-between;
   background-color: var(--primary-color);
 }
-.second-section figure {
+.other-section figure {
   height: 420px;
 }
-.second-section img {
+.other-section img {
   object-position: center;
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
@@ -185,6 +187,8 @@ article .button:hover {
   color: var(--primary-color);
   border: var(--third-color) 2px solid;
 }
+/* ---3rd section --- */
+
 /* ----------- FOOTER ----------- */
 footer {
   color: var(--primary-color);
@@ -279,14 +283,14 @@ footer div p {
     margin: auto;
     margin-bottom: 12px;
   }
-  .second-section {
+  .other-section {
     padding: 70px 30px;
   }
   .group-article {
     grid-template-columns: 1fr;
     margin-top: 50px;
   }
-  .second-section article {
+  .other-section article {
     margin: 0px auto;
     max-width: 650px;
     border-radius: 14px;
@@ -295,10 +299,10 @@ footer div p {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
-  .second-section figure {
+  .other-section figure {
     height: 100%;
   }
-  .second-section img {
+  .other-section img {
     object-position: center;
     border-top-right-radius: 0px;
     border-top-left-radius: 14px;
@@ -330,7 +334,7 @@ footer div p {
     font-size: 26px;
   }
 
-  .second-section article {
+  .other-section article {
     max-width: 400px;
     border-radius: 14px;
   }
@@ -340,10 +344,10 @@ footer div p {
   .body-article {
     padding: 24px;
   }
-  .second-section figure {
+  .other-section figure {
     max-height: 450px;
   }
-  .second-section img {
+  .other-section img {
     border-top-right-radius: 14px;
   }
 }
