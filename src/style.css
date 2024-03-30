@@ -307,10 +307,7 @@ footer div p {
   h3 {
     font-size: 16px;
   }
-  p {
-    font-size: 12px;
-    line-height: 20px;
-  }
+
   .text-heading h2 {
     font-size: 22px;
     margin-bottom: 140px;
@@ -321,9 +318,7 @@ footer div p {
   .text-heading {
     padding: 0 30px;
   }
-  .text-container {
-    margin: 20px 0;
-  }
+
   .frist-section {
     max-width: 580px;
     grid-template-columns: 1fr;
@@ -331,13 +326,20 @@ footer div p {
     padding: 80px 40px;
   }
   .frist-section figure {
-    height: 380px;
+    max-height: 380px;
   }
   .frist-section img {
     object-position: top;
   }
   .frist-section div {
     text-align: center;
+  }
+  .text-container p:last-child {
+    display: block;
+    margin-bottom: 30px;
+  }
+  .frist-section .text-container p {
+    text-align: left;
   }
   .small-heading {
     margin: auto;
@@ -408,7 +410,19 @@ footer div p {
 }
 @media (max-width: 760px) {
   h2 {
-    font-size: 26px;
+    font-size: 22px;
+  }
+  p {
+    font-size: 12px;
+    line-height: 20px;
+  }
+  .button {
+    font-size: 12px;
+    padding: 12px 24px;
+  }
+  .small-heading {
+    font-size: 10px;
+    border-left: solid 3px var(--second-color);
   }
 
   .other-section article {
@@ -433,5 +447,14 @@ footer div p {
   .embed1 {
     height: unset;
     min-height: 152px;
+  }
+}
+@media (max-height: 690px) {
+  .text-heading h2 {
+    display: none;
+  }
+
+  .text-heading .button {
+    margin-top: 20px;
   }
 }
