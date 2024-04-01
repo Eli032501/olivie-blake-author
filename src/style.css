@@ -3,6 +3,7 @@
   --second-color: #fcca36;
   --third-color: #272044;
   --fourth-color: rgb(242, 242, 242);
+  --shadow-box: -3px 3px 12px rgba(0, 0, 0, 0.3);
 }
 * {
   margin: 0;
@@ -112,7 +113,7 @@ header {
 .frist-section figure {
   height: 600px;
   border-radius: 20px;
-  box-shadow: -3px 3px 12px rgba(0, 0, 0, 0.3);
+  box-shadow: var(--shadow-box);
 }
 .frist-section img {
   border-radius: 20px;
@@ -214,15 +215,19 @@ article .button:hover {
   height: 352px;
   width: 100%;
   border-radius: 10px;
+  box-shadow: var(--shadow-box);
 }
 .embed2 {
   grid-column-start: 5;
   grid-column-end: 7;
   grid-row-start: 1;
   grid-row-end: 4;
-  object-fit: cover;
+
+  box-shadow: var(--shadow-box);
 }
 .embed-insta {
+  width: 100%;
+  object-fit: cover;
   height: 100%;
 }
 .videos {
@@ -230,6 +235,7 @@ article .button:hover {
   width: 100%;
   aspect-ratio: 16 / 9;
   border-radius: 10px;
+  box-shadow: var(--shadow-box);
 }
 
 /* ----------- FOOTER ----------- */
