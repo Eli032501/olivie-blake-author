@@ -166,6 +166,7 @@ header {
   height: 420px;
 }
 .other-section img {
+  filter: brightness(85%) contrast(150%) saturate(115%);
   object-position: center;
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
